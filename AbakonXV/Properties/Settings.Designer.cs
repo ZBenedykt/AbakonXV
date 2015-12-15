@@ -34,5 +34,77 @@ namespace AbakonXV.Properties {
                 this["_Language"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Undefined")]
+        public string _DB_server {
+            get {
+                return ((string)(this["_DB_server"]));
+            }
+            set {
+                this["_DB_server"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Undefined")]
+        public string _DB_user {
+            get {
+                return ((string)(this["_DB_user"]));
+            }
+            set {
+                this["_DB_user"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Undefined")]
+        public string _DB_Name {
+            get {
+                return ((string)(this["_DB_Name"]));
+            }
+            set {
+                this["_DB_Name"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool _DB_Authetification {
+            get {
+                return ((bool)(this["_DB_Authetification"]));
+            }
+            set {
+                this["_DB_Authetification"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5433")]
+        public string _Port {
+            get {
+                return ((string)(this["_Port"]));
+            }
+            set {
+                this["_Port"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string _DB_psw {
+            get {
+                return ((string)(this["_DB_psw"]));
+            }
+            set {
+                this["_DB_psw"] = value;
+            }
+        }
     }
 }

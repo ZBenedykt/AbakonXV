@@ -5,5 +5,23 @@
     <Setting Name="_Language" Type="System.String" Scope="User">
       <Value Profile="(Default)">pl-PL</Value>
     </Setting>
+    <Setting Name="_DB_server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Undefined</Value>
+    </Setting>
+    <Setting Name="_DB_user" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Undefined</Value>
+    </Setting>
+    <Setting Name="_DB_Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Undefined</Value>
+    </Setting>
+    <Setting Name="_DB_Authetification" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="_Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">5433</Value>
+    </Setting>
+    <Setting Name="_DB_psw" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>
