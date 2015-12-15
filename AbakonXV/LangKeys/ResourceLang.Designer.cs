@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AbakonXV.LangKeys {
+namespace AbakonXVWPF.LangKeys {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace AbakonXV.LangKeys {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AbakonXV.LangKeys.ResourceLang", typeof(ResourceLang).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AbakonXVWPF.LangKeys.ResourceLang", typeof(ResourceLang).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -68,7 +68,7 @@ namespace AbakonXVWPF.Utility
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Błędny zapis licencji" + System.Environment.NewLine, "Uwaga", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Błędny zapis licencji" + System.Environment.NewLine + ex.Message, "Uwaga", MessageBoxButton.OK, MessageBoxImage.Error);
                 return "";
             }
 

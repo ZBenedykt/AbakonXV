@@ -105,6 +105,7 @@
     <Compile Include="Utility\IUpdateSignaturePlain.cs" />
     <Compile Include="Utility\PrintAttribute.cs" />
     <Compile Include="Utility\SortableObservableCollection.cs" />
+    <Compile Include="Utility\Utility.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

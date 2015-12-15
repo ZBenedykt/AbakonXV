@@ -71,35 +71,35 @@
         public void SaveParameters()
         {
             
-            AbakonXVWPF.Properties.Settings.Default._DB_server = _serverName;
-            AbakonXVWPF.Properties.Settings.Default._DB_Name = _databaseName;
-            AbakonXVWPF.Properties.Settings.Default._DB_Authetification = !_DbAuth;
+            Properties.Settings.Default._DB_server = _serverName;
+            Properties.Settings.Default._DB_Name = _databaseName;
+            Properties.Settings.Default._DB_Authetification = !_DbAuth;
             if (_DbAuth)
             {
-                AbakonXVWPF.Properties.Settings.Default._DB_user = string.Empty;
+                Properties.Settings.Default._DB_user = string.Empty;
             }
             else
             {
-                AbakonXVWPF.Properties.Settings.Default._DB_user = _User;
+                Properties.Settings.Default._DB_user = _User;
             }
 
             if (_PSW == string.Empty || _PSW == null)
             {
-                AbakonXVWPF.Properties.Settings.Default._DB_psw = string.Empty;
+                Properties.Settings.Default._DB_psw = string.Empty;
             }
             else
             {
-                AbakonXVWPF.Properties.Settings.Default._DB_psw = AbakonXVWPF.Utility.RijndaelCrypto.EncryptString(_PSW);
+                Properties.Settings.Default._DB_psw = AbakonXVWPF.Utility.RijndaelCrypto.EncryptString(_PSW);
             }
-            AbakonXVWPF.Properties.Settings.Default.Save();
+            Properties.Settings.Default.Save();
         }
 
         private void LoadParameters()
         {
-            _serverName = AbakonXVWPF.Properties.Settings.Default._DB_server;
-            _databaseName = AbakonXVWPF.Properties.Settings.Default._DB_Name;
-            _DbAuth = !AbakonXVWPF.Properties.Settings.Default._DB_Authetification;
-            _User = AbakonXVWPF.Properties.Settings.Default._DB_user;
+            _serverName = Properties.Settings.Default._DB_server;
+            _databaseName = Properties.Settings.Default._DB_Name;
+            _DbAuth = !Properties.Settings.Default._DB_Authetification;
+            _User = Properties.Settings.Default._DB_user;
 
             if (_serverName == "Undefined" || _databaseName == "Undefined")
             {
@@ -108,13 +108,13 @@
             }
             else
             {
-                if (AbakonXVWPF.Properties.Settings.Default._DB_psw == string.Empty)
+                if (Properties.Settings.Default._DB_psw == string.Empty)
                 {
                     _PSW = string.Empty;
                 }
                 else
                 {
-                    _PSW = AbakonXVWPF.Utility.RijndaelCrypto.DecryptString(AbakonXVWPF.Properties.Settings.Default._DB_psw);
+                    _PSW = AbakonXVWPF.Utility.RijndaelCrypto.DecryptString(Properties.Settings.Default._DB_psw);
                 }
                 AbakonDataModel.ConnectionString.CreateConnectionString(_serverName, _databaseName, _DbAuth, _User, _PSW);
             }

@@ -446,7 +446,7 @@ namespace AbakonXVWPF.Utility
                         dialog.InitialDirectory = Path.GetDirectoryName(dialog.FileName);
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 // Do nothing
             }
@@ -512,7 +512,7 @@ namespace AbakonXVWPF.Utility
                             if (File.Exists(fileName))
                                 sb.Append(fileName + ";");
                         }
-                        catch (Exception ex)
+                        catch (Exception )
                         {
                             // Go to next
                         }

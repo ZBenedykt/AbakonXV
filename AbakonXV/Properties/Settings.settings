@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AbakonXV.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AbakonXVWPF.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
     <Setting Name="_Language" Type="System.String" Scope="User">
@@ -21,6 +21,24 @@
       <Value Profile="(Default)">5433</Value>
     </Setting>
     <Setting Name="_DB_psw" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="_partnerId_DGHeader" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="_partnerCode_DGHeader" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PathToPatterns" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PathToDocuments_CollectionOfEquipment" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="LastSelectedPattern_SingleEquipment" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LastSelectedPattern_CollectionOfEquipment" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>

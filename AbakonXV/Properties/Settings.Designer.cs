@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AbakonXV.Properties {
+namespace AbakonXVWPF.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -104,6 +104,78 @@ namespace AbakonXV.Properties {
             }
             set {
                 this["_DB_psw"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string _partnerId_DGHeader {
+            get {
+                return ((string)(this["_partnerId_DGHeader"]));
+            }
+            set {
+                this["_partnerId_DGHeader"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string _partnerCode_DGHeader {
+            get {
+                return ((string)(this["_partnerCode_DGHeader"]));
+            }
+            set {
+                this["_partnerCode_DGHeader"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int PathToPatterns {
+            get {
+                return ((int)(this["PathToPatterns"]));
+            }
+            set {
+                this["PathToPatterns"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int PathToDocuments_CollectionOfEquipment {
+            get {
+                return ((int)(this["PathToDocuments_CollectionOfEquipment"]));
+            }
+            set {
+                this["PathToDocuments_CollectionOfEquipment"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LastSelectedPattern_SingleEquipment {
+            get {
+                return ((string)(this["LastSelectedPattern_SingleEquipment"]));
+            }
+            set {
+                this["LastSelectedPattern_SingleEquipment"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LastSelectedPattern_CollectionOfEquipment {
+            get {
+                return ((string)(this["LastSelectedPattern_CollectionOfEquipment"]));
+            }
+            set {
+                this["LastSelectedPattern_CollectionOfEquipment"] = value;
             }
         }
     }

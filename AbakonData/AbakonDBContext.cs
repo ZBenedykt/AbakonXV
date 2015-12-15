@@ -144,10 +144,9 @@ namespace AbakonDataModel
         {
                 if (_instance == null)
                 {
-                _instance = new PgSqlDBContext ("PgSqlDBContext");
+                _instance = new PgSqlDBContext ("User Id=ZBenedykt;Password=kiowdzbp;Host=Localhost;Port=5433;Database=AbakonDBDev");
                 }
                 return _instance;         
-
         }
     }
 
