@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
+using AbakonDataModel;
+using AbakonXVWPF.Utility;
 
-namespace Abakon15WPF
+namespace AbakonXVWPF
 {
 
     public struct ExcelLocalizationParameterStructure

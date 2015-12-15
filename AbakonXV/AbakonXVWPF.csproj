@@ -51,14 +51,23 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Infralution.Localization.Wpf.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Npgsql, Version=3.0.4.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <HintPath>..\packages\Npgsql.3.0.4\lib\net45\Npgsql.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="ReachFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -77,6 +86,38 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Infrastructure\AppState.cs" />
+    <Compile Include="Infrastructure\Converters.cs" />
+    <Compile Include="Infrastructure\EntityComparer.cs" />
+    <Compile Include="Infrastructure\Enumerators.cs" />
+    <Compile Include="Infrastructure\EnumHelper.cs" />
+    <Compile Include="Infrastructure\ExtTextBox.cs" />
+    <Compile Include="Infrastructure\ExtTranslateString.cs" />
+    <Compile Include="Infrastructure\GenPrivilege.cs" />
+    <Compile Include="Infrastructure\PredicateBuilder.cs" />
+    <Compile Include="Infrastructure\RegisteredUser.cs" />
+    <Compile Include="Infrastructure\RelayCommand.cs" />
+    <Compile Include="Infrastructure\ResizingAdorner .cs" />
+    <Compile Include="Infrastructure\StateOfExecution.cs" />
+    <Compile Include="Infrastructure\StringLib.cs" />
+    <Compile Include="Infrastructure\ViewableObservableCollection.cs" />
+    <Compile Include="LangKeys\ResourceLang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceLang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\ClipboardExcel.cs" />
+    <Compile Include="Utility\ClipboardUtility.cs" />
+    <Compile Include="Utility\DataGridSelectionInfo.cs" />
+    <Compile Include="Utility\Email.cs" />
+    <Compile Include="Utility\ExtDependencyObjectClass.cs" />
+    <Compile Include="Utility\FilesUtility.cs" />
+    <Compile Include="Utility\ImageUtility.cs" />
+    <Compile Include="Utility\MyEntityConnection.cs" />
+    <Compile Include="Utility\Remains.cs" />
+    <Compile Include="Utility\RijndaelCrypto.cs" />
+    <Compile Include="Utility\WordToXPSConverter.cs" />
+    <Compile Include="Utility\XMLUtility.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -105,10 +146,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="LangKeys\ResourceLang.pl.resx" />
+    <EmbeddedResource Include="LangKeys\ResourceLang.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceLang.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -116,7 +163,106 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AbakonData\AbakonData.csproj">
+      <Project>{36c6b1a2-4dcc-4120-b31a-61b4980baefc}</Project>
+      <Name>AbakonData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1_home.ico" />
+    <Resource Include="Images\1_home.png" />
+    <Resource Include="Images\ABAKON_logo.ico" />
+    <Resource Include="Images\ABAKON_logo.png" />
+    <Resource Include="Images\Agent.png" />
+    <Resource Include="Images\aligncenter.png" />
+    <Resource Include="Images\alignjustify.png" />
+    <Resource Include="Images\alignleft.PNG" />
+    <Resource Include="Images\alignright.png" />
+    <Resource Include="Images\ArowLeft.png" />
+    <Resource Include="Images\ArowRight.png" />
+    <Resource Include="Images\Backward.png" />
+    <Resource Include="Images\Calendar.png" />
+    <Resource Include="Images\ChangeParent.png" />
+    <Resource Include="Images\ChangeToTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Child.png" />
+    <Resource Include="Images\Clear.png" />
+    <Resource Include="Images\codeblock.png" />
+    <Resource Include="Images\codeinline.png" />
+    <Resource Include="Images\contract.png" />
+    <Resource Include="Images\contract1.png" />
+    <Resource Include="Images\Copy.png" />
+    <Resource Include="Images\Database.png" />
+    <Resource Include="Images\Disconnect.png" />
+    <Resource Include="Images\DocumentMail.png" />
+    <Resource Include="Images\Documents.png" />
+    <Resource Include="Images\editcopy.png" />
+    <Resource Include="Images\editcut.png" />
+    <Resource Include="Images\editpaste.png" />
+    <Resource Include="Images\editredo.png" />
+    <Resource Include="Images\editStartDate.png" />
+    <Resource Include="Images\editundo.png" />
+    <Resource Include="Images\employee.png" />
+    <Resource Include="Images\Erase.png" />
+    <Resource Include="Images\Excel.png" />
+    <Resource Include="Images\filesave.png" />
+    <Resource Include="Images\filter1.png" />
+    <Resource Include="Images\fontbold.png" />
+    <Resource Include="Images\fontgrow.png" />
+    <Resource Include="Images\fontitalic.png" />
+    <Resource Include="Images\fontshrink.png" />
+    <Resource Include="Images\fontunderline.png" />
+    <Resource Include="Images\Forward.png" />
+    <Resource Include="Images\GoEnd.png" />
+    <Resource Include="Images\googleballs-animated.gif" />
+    <Resource Include="Images\GoStart.png" />
+    <Resource Include="Images\graph.png" />
+    <Resource Include="Images\hci-windows-busy-cursor.gif" />
+    <Resource Include="Images\hci-windows-busy-cursor.png" />
+    <Resource Include="Images\home.png" />
+    <Resource Include="Images\Home_Icon_32.png" />
+    <Resource Include="Images\indentdecrease.png" />
+    <Resource Include="Images\indentincrease.png" />
+    <Resource Include="Images\keyboard.png" />
+    <Resource Include="Images\Lab.png" />
+    <Resource Include="Images\LabWorker.png" />
+    <Resource Include="Images\Large.png" />
+    <Resource Include="Images\listbullets.png" />
+    <Resource Include="Images\listnumbers.png" />
+    <Resource Include="Images\Lock.png" />
+    <Resource Include="Images\Mail.png" />
+    <Resource Include="Images\mark24.png" />
+    <Resource Include="Images\Minimalizuj.png" />
+    <Resource Include="Images\New document.png" />
+    <Resource Include="Images\normaltext.png" />
+    <Resource Include="Images\Okna.png" />
+    <Resource Include="Images\OmetrisisDomain.png" />
+    <Resource Include="Images\OpenFolder.png" />
+    <Resource Include="Images\PersonMale.png" />
+    <Resource Include="Images\Persons.png" />
+    <Resource Include="Images\plus16.png" />
+    <Resource Include="Images\Print preview.png" />
+    <Resource Include="Images\PrzywrocRozmiar.png" />
+    <Resource Include="Images\Rotor.png" />
+    <Resource Include="Images\Save.png" />
+    <Resource Include="Images\Search.png" />
+    <Resource Include="Images\search24.png" />
+    <Resource Include="Images\separator.png" />
+    <Resource Include="Images\Settingsx.png" />
+    <Resource Include="Images\Smaler.png" />
+    <Resource Include="Images\StartImgRotator.png" />
+    <Resource Include="Images\StartImgRotator1.png" />
+    <Resource Include="Images\StartImgRotator2.png" />
+    <Resource Include="Images\StartImgRotator3.png" />
+    <Resource Include="Images\Text.png" />
+    <Resource Include="Images\Top.png" />
+    <Resource Include="Images\Unlock.png" />
+    <Resource Include="Images\Up.png" />
+    <Resource Include="Images\x_home.png" />
+    <Resource Include="Images\Zamknij1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
