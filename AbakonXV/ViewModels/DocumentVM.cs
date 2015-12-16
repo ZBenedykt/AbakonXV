@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using AbakonDataModel;
 using AbakonXVWPF.Utility;
 using System.Windows.Controls;
+
 namespace AbakonXVWPF.ViewModels
 {
     public class DocumentVM : ViewModelBase
