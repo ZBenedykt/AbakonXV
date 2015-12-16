@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using AbakonXVWPF.Infrastructure;
 using System.ComponentModel;
 using System.Windows;
-using System.Collections.Specialized;
-using AbakonXVWPF.Interfaces;
-using System.Collections.ObjectModel;
 using AbakonDataModel;
-using AbakonXVWPF.Views;
-using AbakonXVWPF.Views.Windows;
 
 namespace AbakonXVWPF.ViewModels
 {
@@ -143,19 +135,19 @@ namespace AbakonXVWPF.ViewModels
                                                         }
                                                         else
                                                         {
-                                                            DepartmentSelectionWindow win = WindowManagerClass.WindowOpener<DepartmentSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true) as DepartmentSelectionWindow;
+                                                //todo  +++            DepartmentSelectionWindow win = WindowManagerClass.WindowOpener<DepartmentSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true) as DepartmentSelectionWindow;
                                                             {
-                                                                if (win.DialogResult.Value)
-                                                                {
-                                                                    Department tempDepartment = CurrentDepartment;
-                                                                    if (CurrentDepartment.ParentDepartment != null)
-                                                                    {
-                                                                        CurrentDepartment.ParentDepartment.subordinateList.Remove(CurrentDepartment);
-                                                                    }
+                                                                //if (win.DialogResult.Value)
+                                                                //{
+                                                                //    Department tempDepartment = CurrentDepartment;
+                                                                //    if (CurrentDepartment.ParentDepartment != null)
+                                                                //    {
+                                                                //        CurrentDepartment.ParentDepartment.subordinateList.Remove(CurrentDepartment);
+                                                                //    }
 
-                                                                    win.department.subordinateList.Add(tempDepartment);
-                                                                    DepartmentList = new ViewableObservableCollection<Department>(Department.Load());
-                                                                }
+                                                                //    win.department.subordinateList.Add(tempDepartment);
+                                                                //    DepartmentList = new ViewableObservableCollection<Department>(Department.Load());
+                                                                //}
                                                             }
                                                         }
 

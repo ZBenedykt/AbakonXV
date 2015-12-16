@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using AbakonXVWPF.Infrastructure;
 using System.Windows;
 using AbakonDataModel;
@@ -9,7 +8,6 @@ using System.ComponentModel;
 using AbakonXVWPF.Utility;
 using System.Xml.Linq;
 using System.Collections.ObjectModel;
-using AbakonXVWPF.Views.Windows;
 
 namespace AbakonXVWPF.ViewModels
 {
@@ -265,13 +263,13 @@ namespace AbakonXVWPF.ViewModels
                     m_SelectDocumentClassifierCommand = new RelayCommand(
                                                     param =>
                                                     {
-                                                        DocumentClassificationPatternSelectionWindow win = WindowManagerClass.WindowOpener<DocumentClassificationPatternSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true) as DocumentClassificationPatternSelectionWindow;
-                                                        {
-                                                            if (win.DialogResult.Value)
-                                                            {
-                                                                SelectedPattern = win.documentClassificationPattern;
-                                                            }
-                                                        }
+                                                //todo +++        DocumentClassificationPatternSelectionWindow win = WindowManagerClass.WindowOpener<DocumentClassificationPatternSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true) as DocumentClassificationPatternSelectionWindow;
+                                                        //{
+                                                        //    if (win.DialogResult.Value)
+                                                        //    {
+                                                        //        SelectedPattern = win.documentClassificationPattern;
+                                                        //    }
+                                                        //}
                                                     },
                                                     param => true
                                                     );

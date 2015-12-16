@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Runtime.InteropServices;
 using System.Windows;
 using Word = Microsoft.Office.Interop.Word;
 using AbakonDataModel.Infrastructure;
-using System.ComponentModel.DataAnnotations;
-using AbakonDataModel;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 using DocumentFormat.OpenXml;

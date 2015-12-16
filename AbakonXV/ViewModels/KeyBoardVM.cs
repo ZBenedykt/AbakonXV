@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Controls;
-using Microsoft.Office.Interop.Word;
 using AbakonXVWPF.Interfaces;
 using AbakonXVWPF.Infrastructure;
 using AbakonDataModel;

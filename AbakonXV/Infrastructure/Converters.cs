@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Data;
 using System.Windows;
 using System.Globalization;
@@ -10,6 +7,7 @@ using System.Windows.Documents;
 using System.Windows.Markup;
 
 namespace AbakonXVWPF.Infrastructure
+
 {
     [ValueConversion(typeof(bool), typeof(bool))]
     public class BoolRevertConverter : IValueConverter

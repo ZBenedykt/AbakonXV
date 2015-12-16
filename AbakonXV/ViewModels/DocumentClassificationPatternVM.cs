@@ -1,6 +1,4 @@
 ﻿using AbakonDataModel;
-using AbakonXVWPF.Views;
-using AbakonXVWPF.Views.Windows;
 using AbakonXVWPF.Infrastructure;
 using System.ComponentModel;
 using System.Windows;
@@ -119,23 +117,23 @@ namespace AbakonXVWPF.ViewModels
                                                         }
                                                         else
                                                         {
-                                                            DocumentClassificationPatternSelectionWindow win = WindowManagerClass.WindowOpener<DocumentClassificationPatternSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true) as DocumentClassificationPatternSelectionWindow;
+                                    //todo  +++                        DocumentClassificationPatternSelectionWindow win = WindowManagerClass.WindowOpener<DocumentClassificationPatternSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true) as DocumentClassificationPatternSelectionWindow;
                                                             {
-                                                                if (win.DialogResult.Value)
-                                                                {
-                                                                    DocumentClassificationPattern tempType = CurrentDocumentClassificationPattern;
+                                                                //if (win.DialogResult.Value)
+                                                                //{
+                                                                //    DocumentClassificationPattern tempType = CurrentDocumentClassificationPattern;
 
-                                                                    if (CurrentDocumentClassificationPattern.parent != null)
-                                                                    {
-                                                                        CurrentDocumentClassificationPattern.parent.dcChildren.Remove(CurrentDocumentClassificationPattern);
-                                                                    }
-                                                                    win.documentClassificationPattern.dcChildren.Add(tempType);
-                                                                    if (DocumentClassificationPatternList.Contains(CurrentDocumentClassificationPattern))
-                                                                    {
-                                                                        DocumentClassificationPatternList.Remove(CurrentDocumentClassificationPattern);
-                                                                    }
-                                                                    DocumentClassificationPatternList = new ViewableObservableCollection<DocumentClassificationPattern>(DocumentClassificationPattern.LoadRoots());
-                                                                }
+                                                                //    if (CurrentDocumentClassificationPattern.parent != null)
+                                                                //    {
+                                                                //        CurrentDocumentClassificationPattern.parent.dcChildren.Remove(CurrentDocumentClassificationPattern);
+                                                                //    }
+                                                                //    win.documentClassificationPattern.dcChildren.Add(tempType);
+                                                                //    if (DocumentClassificationPatternList.Contains(CurrentDocumentClassificationPattern))
+                                                                //    {
+                                                                //        DocumentClassificationPatternList.Remove(CurrentDocumentClassificationPattern);
+                                                                //    }
+                                                                //    DocumentClassificationPatternList = new ViewableObservableCollection<DocumentClassificationPattern>(DocumentClassificationPattern.LoadRoots());
+                                                                //}
                                                             }
                                                         }
 

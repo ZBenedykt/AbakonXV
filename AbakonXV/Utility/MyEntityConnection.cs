@@ -62,8 +62,8 @@
             LoadParameters();
             if (_serverName == "Undefined" || _databaseName == "Undefined")
             {
-                DataBaseConnectionWindow dbConn = new DataBaseConnectionWindow();
-                dbConn.ShowDialog();
+            //todo ++++    DataBaseConnectionWindow dbConn = new DataBaseConnectionWindow();
+               // dbConn.ShowDialog();
             }
             ConnectionOK = AbakonDataModel.ConnectionString.TestConnection();
         }
@@ -103,8 +103,8 @@
 
             if (_serverName == "Undefined" || _databaseName == "Undefined")
             {
-                DataBaseConnectionWindow dbConn = new DataBaseConnectionWindow();
-                dbConn.ShowDialog();
+   //todo  +++             DataBaseConnectionWindow dbConn = new DataBaseConnectionWindow();
+  //              dbConn.ShowDialog();
             }
             else
             {

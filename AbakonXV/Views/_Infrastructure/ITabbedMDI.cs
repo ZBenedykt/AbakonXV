@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace AbakonXVWPF.Views
+﻿namespace AbakonXVWPF.Views
 {
     public interface ITabbedMDI
     {

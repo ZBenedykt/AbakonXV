@@ -481,7 +481,7 @@ namespace AbakonXVWPF.Utility
                         return dialog.FileName;
                     }
                 }
-                catch (Exception ex)
+                catch (Exception )
                 {
                     return dialog.FileName;
                 }

@@ -1,16 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using AbakonXVWPF.Infrastructure;
 using System.ComponentModel;
 using System.Windows;
-using System.Collections.Specialized;
-using AbakonXVWPF.Interfaces;
 using System.Collections.ObjectModel;
 using AbakonDataModel;
 using AbakonXVWPF.Utility;
-using AbakonXVWPF.Views.Windows;
 using System.Windows.Controls;
 namespace AbakonXVWPF.ViewModels
 {
@@ -239,19 +234,19 @@ namespace AbakonXVWPF.ViewModels
                     m_SelectDocumentClassifierCommand = new RelayCommand(
                                                     param =>
                                                     {
-                                                        DocumentClassificationPatternSelectionWindow win = WindowManagerClass.WindowOpener<DocumentClassificationPatternSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true) as DocumentClassificationPatternSelectionWindow;
+                                     //todo  +++                   DocumentClassificationPatternSelectionWindow win = WindowManagerClass.WindowOpener<DocumentClassificationPatternSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true) as DocumentClassificationPatternSelectionWindow;
                                                         {
-                                                            if (win.DialogResult.Value)
-                                                            {
-                                                                CurrentDocument.documentClassificationPattern = win.documentClassificationPattern;
-                                                                System.Windows.Controls.DataGrid ctrl = param as System.Windows.Controls.DataGrid;
-                                                                if (ctrl != null)
-                                                                {
-                                                                    ctrl.CommitEdit();
-                                                                    ctrl.Items.Refresh();
-                                                                }
-                                                                SaveToDB();
-                                                            }
+                                                            //if (win.DialogResult.Value)
+                                                            //{
+                                                            //    CurrentDocument.documentClassificationPattern = win.documentClassificationPattern;
+                                                            //    System.Windows.Controls.DataGrid ctrl = param as System.Windows.Controls.DataGrid;
+                                                            //    if (ctrl != null)
+                                                            //    {
+                                                            //        ctrl.CommitEdit();
+                                                            //        ctrl.Items.Refresh();
+                                                            //    }
+                                                            //    SaveToDB();
+                                                            //}
                                                         }
                                                     },
                                                     param => true
@@ -319,14 +314,14 @@ namespace AbakonXVWPF.ViewModels
                     m_ConnectPartnerToDocumentCommand = new RelayCommand(
                                                     param =>
                                                     {
-                                                        PartnerSelectionWindow win = WindowManagerClass.WindowOpener<PartnerSelectionWindow>(WindowContextEnum.persons, true, true) as PartnerSelectionWindow;
-                                                        if (win.DialogResult.HasValue && win.partner != null)
-                                                        {
-                                                            CurrentDocument.partners.Add(win.partner);
-                                                            CurrentDocument.SaveToDb();
-                                                            DataGrid dg = param as DataGrid;
-                                                            if (dg != null) { dg.Items.Refresh(); }
-                                                        }
+                                           //todo  +++             PartnerSelectionWindow win = WindowManagerClass.WindowOpener<PartnerSelectionWindow>(WindowContextEnum.persons, true, true) as PartnerSelectionWindow;
+                                                        //if (win.DialogResult.HasValue && win.partner != null)
+                                                        //{
+                                                        //    CurrentDocument.partners.Add(win.partner);
+                                                        //    CurrentDocument.SaveToDb();
+                                                        //    DataGrid dg = param as DataGrid;
+                                                        //    if (dg != null) { dg.Items.Refresh(); }
+                                                        //}
 
                                                     },
                                                     param => CurrentDocument != null

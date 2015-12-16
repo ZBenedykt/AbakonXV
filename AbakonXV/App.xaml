@@ -1,9 +1,29 @@
-﻿<Application x:Class="AbakonXV.App"
+﻿<Application x:Class="AbakonXVWPF.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:AbakonXV"
+             xmlns:wpfInfra="clr-namespace:AbakonXVWPF.Infrastructure"
+              xmlns:local="clr-namespace:AbakonXV"
              StartupUri="MainWindow.xaml">
+  
     <Application.Resources>
-         
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Style/GeneralStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+          
+            <wpfInfra:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverterTrueFalse" />
+            <wpfInfra:WielokrotnoscDoubleConverter x:Key="GlobalWielokrotnoscDoubleConverter" />
+            <wpfInfra:ZeroBaseIndexConverter x:Key="GlobalZeroBaseIndexConverter" />
+            <wpfInfra:BoolRevertConverter x:Key="GlobalBoolRevertConverte r" />
+            <wpfInfra:NullToBooleanConverter x:Key="GlobalNullToBooleanConverter" />
+            <wpfInfra:FlowDocumentToXamlConverter x:Key="FlowDocumentToXamlConverter" />
+            <wpfInfra:MultiBooleanToVisibilityConverter x:Key="GlobalMultiBooleanToVisibilityConverter" />
+            <wpfInfra:UpadateSignatureFormatter x:Key="GlobalUpadateSignatureFormatter"/>
+            <wpfInfra:GridLengthConverter x:Key="GridLengthConverter"/>
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+            
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

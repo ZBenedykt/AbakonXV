@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Collections.ObjectModel;
 using AbakonDataModel;
 using System.ComponentModel;
 using System.Windows;
 using AbakonXVWPF.Infrastructure;
-using AbakonXVWPF.Utility;
 using System.Windows.Controls;
 namespace AbakonXVWPF.ViewModels
 {

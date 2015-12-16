@@ -1,19 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using AbakonXVWPF.Infrastructure;
 using System.ComponentModel;
 using System.Windows;
-using System.Collections.Specialized;
-using AbakonXVWPF.Interfaces;
-using System.Collections.ObjectModel;
 using AbakonDataModel;
 using AbakonDataModel.Utility;
 using System.Windows.Threading;
 using System.IO;
 using System.Windows.Controls;
-using AbakonXVWPF.Views.Windows;
 
 namespace AbakonXVWPF.ViewModels
 {
@@ -532,13 +526,13 @@ namespace AbakonXVWPF.ViewModels
                     m_AddAgentCommand = new RelayCommand(
                                                     param =>
                                                     {
-                                                        PartnerSelectionWindow win = WindowManagerClass.WindowOpener<PartnerSelectionWindow>(WindowContextEnum.persons, true, true) as PartnerSelectionWindow;
-                                                        if (win.DialogResult.HasValue && win.partner != null)
-                                                        {
-                                                            CurrentPerson.partnerList.Add(win.partner);
-                                                            DataGrid dg = param as DataGrid;
-                                                            if (dg != null) { dg.Items.Refresh(); }
-                                                        }
+                                                        //todo  +++                PartnerSelectionWindow win = WindowManagerClass.WindowOpener<PartnerSelectionWindow>(WindowContextEnum.persons, true, true) as PartnerSelectionWindow;
+                                                        //if (win.DialogResult.HasValue && win.partner != null)
+                                                        //{
+                                                        //    CurrentPerson.partnerList.Add(win.partner);
+                                                        //    DataGrid dg = param as DataGrid;
+                                                        //    if (dg != null) { dg.Items.Refresh(); }
+                                                        //}
                                                     },
                                                      param => !ReadOnly && CurrentPerson != null
                                                     );
@@ -557,13 +551,13 @@ namespace AbakonXVWPF.ViewModels
                     m_AddEmployeeCommand = new RelayCommand(
                                                     param =>
                                                     {
-                                                        DepartmentSelectionWindow win = WindowManagerClass.WindowOpener<DepartmentSelectionWindow>(WindowContextEnum.persons, true, true) as DepartmentSelectionWindow;
-                                                        if (win.DialogResult.HasValue && win.department != null)
-                                                        {
-                                                            Employee newEmployee = Employee.Create(CurrentPerson, win.department);
-                                                            DataGrid dg = param as DataGrid;
-                                                            if (dg != null) { dg.Items.Refresh(); }
-                                                        }
+                                                        //todo  +++                DepartmentSelectionWindow win = WindowManagerClass.WindowOpener<DepartmentSelectionWindow>(WindowContextEnum.persons, true, true) as DepartmentSelectionWindow;
+                                                       // if (win.DialogResult.HasValue && win.department != null)
+                                                        //{
+                                                        //    Employee newEmployee = Employee.Create(CurrentPerson, win.department);
+                                                        //    DataGrid dg = param as DataGrid;
+                                                        //    if (dg != null) { dg.Items.Refresh(); }
+                                                        //}
                                                     },
                                                      param => !ReadOnly && CurrentPerson != null
                                                     );

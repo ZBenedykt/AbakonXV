@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows.Controls;
-
-namespace AbakonXVWPF.Views
+﻿namespace AbakonXVWPF.Views
 {
     //public class ScrollIntoViewBehavior : Behavior<DataGrid>
     //{

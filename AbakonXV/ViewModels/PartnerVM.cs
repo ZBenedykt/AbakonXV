@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using AbakonXVWPF.Infrastructure;
 using System.ComponentModel;
 using System.Windows;
-using System.Collections.Specialized;
-using AbakonXVWPF.Interfaces;
 using System.Collections.ObjectModel;
 using AbakonDataModel;
-using AbakonXVWPF.Views.Windows;
 using AbakonXVWPF.Utility;
 
 namespace AbakonXVWPF.ViewModels
@@ -271,12 +266,12 @@ namespace AbakonXVWPF.ViewModels
                     m_SelectDocumentClassifierCommand = new RelayCommand(
                                                     param =>
                                                     {
-                                                        DocumentClassificationPatternSelectionWindow win = WindowManagerClass.WindowOpener<DocumentClassificationPatternSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true) as DocumentClassificationPatternSelectionWindow;
+                                                        //todo  +++                DocumentClassificationPatternSelectionWindow win = WindowManagerClass.WindowOpener<DocumentClassificationPatternSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true) as DocumentClassificationPatternSelectionWindow;
                                                         {
-                                                            if (win.DialogResult.Value)
-                                                            {
-                                                                SelectedDocument.documentClassificationPattern = win.documentClassificationPattern;
-                                                            }
+                                                            //if (win.DialogResult.Value)
+                                                            //{
+                                                            //    SelectedDocument.documentClassificationPattern = win.documentClassificationPattern;
+                                                            //}
                                                             RaisePropertyChanged(() => SelectedDocument);
                                                             System.Windows.Controls.DataGrid ctrl = param as System.Windows.Controls.DataGrid;
                                                             try

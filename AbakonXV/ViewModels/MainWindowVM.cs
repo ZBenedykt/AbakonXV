@@ -138,7 +138,7 @@ namespace AbakonXVWPF.ViewModels
                     m_ApplicationOptionsCommand = new RelayCommand(
                                                     param =>
                                                     {
-                                                        WindowManagerClass.WindowOpener<AppParametersWindow>(WindowContextEnum.empty, singleton: true);
+                             //Todo  +++                           WindowManagerClass.WindowOpener<AppParametersWindow>(WindowContextEnum.empty, singleton: true);
                                                     },
                                                     param => true
                                                     );
@@ -178,7 +178,7 @@ namespace AbakonXVWPF.ViewModels
                     m_DepartmentDictionaryDefinitionCommand = new RelayCommand(
                                                     param =>
                                                     {
-                                                        WindowManagerClass.WindowOpener<DepartmentWindow>(WindowContextEnum.empty, singleton: true);
+                                  //todo  +++                      WindowManagerClass.WindowOpener<DepartmentWindow>(WindowContextEnum.empty, singleton: true);
                                                         //  WindowManagerClass.WindowOpener<DepartmentSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true);
                                                     },
                                                     param => true
@@ -198,7 +198,7 @@ namespace AbakonXVWPF.ViewModels
                     m_DocumentClassificationPatternDefinitionCommand = new RelayCommand(
                                                     param =>
                                                     {
-                                                        WindowManagerClass.WindowOpener<DocumentClassificationPatterenWindow>(WindowContextEnum.empty, singleton: true);
+                                  //todo  +++                      WindowManagerClass.WindowOpener<DocumentClassificationPatterenWindow>(WindowContextEnum.empty, singleton: true);
                                                         //  WindowManagerClass.WindowOpener<DepartmentSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true);
                                                     },
                                                     param => true
@@ -218,7 +218,7 @@ namespace AbakonXVWPF.ViewModels
                     m_PathsFileCommand = new RelayCommand(
                                                     param =>
                                                     {
-                                                        WindowManagerClass.WindowOpener<FilePathWindow>(WindowContextEnum.empty, singleton: true);
+                                     //todo  +++                   WindowManagerClass.WindowOpener<FilePathWindow>(WindowContextEnum.empty, singleton: true);
                                                         //  WindowManagerClass.WindowOpener<DepartmentSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true);
                                                     },
                                                     param => true
@@ -239,7 +239,7 @@ namespace AbakonXVWPF.ViewModels
                                                     param =>
                                                     {
 
-                                                        WindowManagerClass.WindowOpener<StandardWindow>(WindowContextEnum.empty, singleton: true);
+                                        //todo  +++                WindowManagerClass.WindowOpener<StandardWindow>(WindowContextEnum.empty, singleton: true);
                                                     },
                                                     param => true
                                                     );
@@ -260,7 +260,7 @@ namespace AbakonXVWPF.ViewModels
                     m_UsersCommand = new RelayCommand(
                                                     param =>
                                                     {
-                                                        WindowManagerClass.WindowOpener<UserWindow>(WindowContextEnum.empty, singleton: true);
+                                 //todo   +++                       WindowManagerClass.WindowOpener<UserWindow>(WindowContextEnum.empty, singleton: true);
                                                         //  WindowManagerClass.WindowOpener<DepartmentSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true);
                                                     },
                                                     param => true
@@ -283,7 +283,7 @@ namespace AbakonXVWPF.ViewModels
                     m_KeyBoardCommand = new RelayCommand(
                                                     param =>
                                                     {
-                                                        WindowManagerClass.WindowOpener<KeyBoardContentWindow>(WindowContextEnum.empty, singleton: true);
+                                        //todo  +++                WindowManagerClass.WindowOpener<KeyBoardContentWindow>(WindowContextEnum.empty, singleton: true);
                                                         //  WindowManagerClass.WindowOpener<DepartmentSelectionWindow>(WindowContextEnum.empty, singleton: true, dialog: true);
                                                     },
                                                     param => true
@@ -305,7 +305,7 @@ namespace AbakonXVWPF.ViewModels
                     m_ChangePasswordCommand = new RelayCommand(
                                                     param =>
                                                     {
-                                                        WindowManagerClass.WindowOpener<ChangePasswordWindow>(WindowContextEnum.empty, singleton: true, dialog: true);
+                                                        //todo  +++                  WindowManagerClass.WindowOpener<ChangePasswordWindow>(WindowContextEnum.empty, singleton: true, dialog: true);
                                                     },
                                                     param => true
                                                     );
@@ -325,11 +325,11 @@ namespace AbakonXVWPF.ViewModels
                     m_ChangeDBCommand = new RelayCommand(
                                                     param =>
                                                     {
-                                                        DataBaseConnectionWindow dbConn = new DataBaseConnectionWindow();
-                                                        if (dbConn.ShowDialog().Value == true)
-                                                        {
-                                                            Application.Current.Shutdown();
-                                                        }
+                                                        //todo  +++                DataBaseConnectionWindow dbConn = new DataBaseConnectionWindow();
+                                                        //if (dbConn.ShowDialog().Value == true)
+                                                        //{
+                                                        //    Application.Current.Shutdown();
+                                                        //}
                                                     },
                                                     param => true
                                                     );

@@ -11,6 +11,6 @@
         /// <summary>
         /// Get or set the application-window's reference to the virtual-keyboard.
         /// </summary>
-        KeyBoardWindow TheVirtualKeyboard { get; set; }
+      //todo +++++  KeyBoardWindow TheVirtualKeyboard { get; set; }
     }
 }
