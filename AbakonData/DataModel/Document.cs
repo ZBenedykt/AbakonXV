@@ -53,6 +53,7 @@ namespace AbakonDataModel
         public DateTime? CreateDate { get; set; }
         public DateTime? LastUpdateDate { get; set; }
         public string UserName { get; set; }
+       
         #endregion
 
         [NotMapped]
