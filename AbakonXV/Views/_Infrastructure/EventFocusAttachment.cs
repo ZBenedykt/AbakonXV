@@ -19,6 +19,7 @@ namespace AbakonXVWPF.Views
                                     DependencyProperty.RegisterAttached("ElementToFocus", typeof(Control),
                                     typeof(EventFocusAttachment), new UIPropertyMetadata(null, ElementToFocusPropertyChanged));
 
+
         public static void ElementToFocusPropertyChanged(DependencyObject sender, DependencyPropertyChangedEventArgs e)
         {
             var button = sender as Button;

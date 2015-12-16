@@ -153,6 +153,15 @@
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="ViewModels\_FilterField.cs" />
     <Compile Include="ViewModels\_FilterPanelVM.cs" />
+    <Compile Include="Views\Controls\DocumentUC.xaml.cs">
+      <DependentUpon>DocumentUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\PartnerDetailsUC.xaml.cs">
+      <DependentUpon>PartnerDetailsUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\PartnerUC.xaml.cs">
+      <DependentUpon>PartnerUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Controls\Standard\ClosableTab.cs" />
     <Compile Include="Views\Controls\Standard\CloseableHeader.xaml.cs">
       <DependentUpon>CloseableHeader.xaml</DependentUpon>
@@ -162,6 +171,9 @@
     </Compile>
     <Compile Include="Views\Controls\Standard\FsRichTextBox.xaml.cs">
       <DependentUpon>FsRichTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\Standard\NavigationPanel.xaml.cs">
+      <DependentUpon>NavigationPanel.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Windows\WindowClosingFlag.cs" />
     <Compile Include="Views\_ExtensionMethods\PasswordBoxMonitor.cs" />
@@ -192,6 +204,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Controls\DocumentUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\PartnerDetailsUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\PartnerUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Controls\Standard\CloseableHeader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -201,6 +225,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Controls\Standard\FsRichTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\Standard\NavigationPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

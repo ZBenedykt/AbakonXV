@@ -11,12 +11,12 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Style/GeneralStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+            
 
-          
             <wpfInfra:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverterTrueFalse" />
             <wpfInfra:WielokrotnoscDoubleConverter x:Key="GlobalWielokrotnoscDoubleConverter" />
             <wpfInfra:ZeroBaseIndexConverter x:Key="GlobalZeroBaseIndexConverter" />
-            <wpfInfra:BoolRevertConverter x:Key="GlobalBoolRevertConverte r" />
+            <wpfInfra:BoolRevertConverter x:Key="GlobalBoolRevertConverter" />
             <wpfInfra:NullToBooleanConverter x:Key="GlobalNullToBooleanConverter" />
             <wpfInfra:FlowDocumentToXamlConverter x:Key="FlowDocumentToXamlConverter" />
             <wpfInfra:MultiBooleanToVisibilityConverter x:Key="GlobalMultiBooleanToVisibilityConverter" />
